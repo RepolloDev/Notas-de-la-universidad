@@ -1,5 +1,7 @@
 <h1 align='center'>Clase 4 - Aproximación de Taylor</h1>
 
+> ![NOTE]
+> La tarea de la clase se encuentra se describe en el archivo [](./tarea.md)
 
 > _Brook Taylor_ fue un matemático ingles que realizo grandes aportes a las ramas del cálculo diferencial e integral, es más conocido por su **serie de Taylor**
 
