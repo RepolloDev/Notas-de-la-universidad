@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de pedidos</title>
+  </head>
+  <style>
+    * {
+      font-family: monospace;
+    }
+
+    body {
+      background-color: #7962f1;
+    }
+
+    form {
+      margin: 10dvh auto;
+      width: 400px;
+      padding: 1rem;
+      padding-left: 4rem;
+      border: 1px solid #ccc;
+      border-radius: 1rem;
+      background-color: #fffffff0;
+      /* x y blur */
+      box-shadow: 0px 5px 15px #00000050;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    form li + li {
+      margin-top: 1rem;
+    }
+
+    label {
+      display: inline-block;
+      width: 90px;
+      text-align: end;
+    }
+
+    textarea {
+      font-size: 1rem;
+      font-family: sans-serif;
+      width: 210px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #000;
+    }
+
+    textarea {
+      vertical-align: top;
+      height: 5rem;
+    }
+
+    button {
+      margin-left: 0.5rem;
+      background-color: #24adf3;
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      margin-left: 120px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Para arreglar las validaciones */
+    input {
+      min-width: 200px;
+    }
+
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .inline {
+      text-align: center;
+    }
+
+    .inline label {
+      width: auto;
+    }
+    .inline input {
+      min-width: auto;
+    }
+
+    .ad-message {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <main>
+      <form>
+        <h1>Realice su pedido 📦</h1>
+        <ul>
+          <li>
+            <label for="username">🦸 Nombre de usuario:</label>
+            <input
+              id="username"
+              placeholder="Ej. Juanito alcachofa"
+              name="username"
+              type="text"
+              minlength="3"
+              maxlength="40"
+              required
+            />
+          </li>
+          <li>
+            <label for="age">🔢 Edad de usuario</label>
+            <input
+              id="age"
+              placeholder="Ej. 18"
+              name="age"
+              type="number"
+              min="18"
+              max="120"
+              required
+            />
+          </li>
+          <li>
+            <label for="email">🏠 Direacción email:</label>
+            <input
+              placeholder="Ej. juanito@gmail.com"
+              type="email"
+              name="email"
+              id="email"
+              minlength="3"
+              required
+            />
+          </li>
+          <li>
+            <label for="prefix">🌐 Código de país</label>
+            <input
+              type="text"
+              name="prefix"
+              id="prefix"
+              value="+591"
+              readonly
+            />
+          </li>
+          <li>
+            <label for="phone">📱 Número de celular:</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="12345678"
+              min="10000000"
+              min="99999999"
+              required
+            />
+          </li>
+          <li>
+            <label for="date">📅 Fecha de envío</label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              min="2024-08-22"
+              max="2024-12-31"
+              required
+            />
+          </li>
+          <li>
+            <label for="data">🔢 Número de pedidos</label>
+            <input
+              type="data"
+              name="data"
+              id="data"
+              min="1"
+              max="100"
+              step="5"
+              placeholder="Ej. 5"
+              required
+            />
+          </li>
+          <li>
+            <label for="comment">💬 Comentarios:</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Ingrese un comentario de máximo 200 caracteres."
+              minlength="30"
+              maxlength="200"
+              required
+            ></textarea>
+          </li>
+          <li class="inline">
+            <label class="ad-message" for="ads">🚧 Recibir anuncios</label>
+            <input type="checkbox" disabled />
+          </li>
+          <li class="actions">
+            <button>Subir comentario</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>

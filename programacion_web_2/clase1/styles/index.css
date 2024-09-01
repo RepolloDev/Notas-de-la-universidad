@@ -1,0 +1,55 @@
+* {
+  color: #1e1e95;
+}
+
+p {
+  color: rgb(6, 73, 95);
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  border: 5px dotted lightslategray;
+  text-align: center;
+  margin: 40px 30px;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  border: 5px dotted lightslategray;
+  color: cadetblue;
+  text-align: center;
+  margin: 10px 5px 15px 5px;
+  padding: 5px;
+}
+
+section {
+  width: 315px;
+  border: 5px solid lightsteelblue;
+  padding: 13px;
+  margin: 20px;
+}
+
+#mi_parrafo {
+  color: indigo;
+  font-size: 22px;
+  border: 1px solid lightcyan;
+}
+
+pre {
+  border: solid lightgray;
+  margin: 7px 5px;
+}
+
+.miclase {
+  font-weight: bold;
+  color: lightsteelblue;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+
+.your-element > * + * {
+
+}

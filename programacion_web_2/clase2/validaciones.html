@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de ejemplo</title>
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    main {
+      padding: 0 10vw;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      text-align: center;
+      width: 50vw;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    label {
+      display: inline-block;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      min-width: 200px;
+    }
+
+    /* El selector :is para agrupar etiquetas */
+    :is(input, textarea):valid {
+      background-color: greenyellow;
+    }
+    :is(input, textarea):invalid {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Ejemplos de formulario</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Formulario 1 - Introducción</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="username"> Nombre </label>
+              <input type="text" name="username" id="username" required />
+            </li>
+            <li>
+              <label for="email"> Email </label>
+              <input type="email" name="email" id="email" required />
+            </li>
+            <li>
+              <label for="password"> Contraseña </label>
+              <input type="password" name="password" id="password" required />
+            </li>
+          </ul>
+          <button type="submit">Envíar</button>
+        </form>
+      </section>
+      <section>
+        <h2>Formulario 2 - Tamaño de texto</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="fullname"> Nombres (Requiere un minimo de 4) </label>
+              <input type="text" name="fullname" id="fullname" minlength="4" />
+            </li>
+            <li>
+              <label for="lastname">
+                Apellidos (Está en un intervalo 4:20)
+              </label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                minlength="4"
+                maxlength="20"
+              />
+            </li>
+          </ul>
+          <button type="submit">Envíar</button>
+        </form>
+      </section>
+      <section>
+        <h2>Formulario 3 - Máximos y minimos (números)</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="age"> Edad (Está en un intervalo 18:60) </label>
+              <input type="number" name="age" id="age" min="18" max="60" />
+            </li>
+            <li>
+              <label for="date"> Fecha (Para fechas TODO 2024) </label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                min="2024-01-01"
+                max="2024-12-31"
+              />
+            </li>
+          </ul>
+          <button type="submit">Envíar</button>
+        </form>
+      </section>
+      <section>
+        <h2>Formulario 3 - Atributos</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="value">
+                Valor incremental por pasos (de 5 en 5)
+              </label>
+              <input type="number" name="value" id="value" step="5" />
+            </li>
+            <li>
+              <label for="required"> Valor requerido </label>
+              <input type="text" name="required" id="required" required />
+            </li>
+            <li>
+              <label for="readonly"> Valor de solo lectura </label>
+              <input
+                type="text"
+                name="readonly"
+                id="readonly"
+                value="Esto no se puede modificar"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="readonly"> Campo desactivado </label>
+              <input type="text" name="disabled" id="disabled" disabled />
+            </li>
+          </ul>
+          <button type="submit">Envíar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
