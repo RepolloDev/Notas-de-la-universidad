@@ -34,7 +34,7 @@ $$
 
 ### Resultado en Excel
 
-<p align="center1">
+<p align="center">
     <img src="./assets/capture_1.png" width="800">
 </p>
 
