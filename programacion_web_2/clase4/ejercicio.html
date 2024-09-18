@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      background-color: #fff;
+      grid-template-columns: repeat(3, minmax(50px, 1fr));
+      grid-auto-columns: auto;
+      gap: 0.5rem;
+      min-height: 100dvh;
+      place-content: center;
+    }
+
+    .item {
+      overflow: hidden;
+      border: 0.4rem solid #fad6e6;
+      border-radius: 1rem;
+    }
+
+    .item-img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item-1">
+        <img class="item-img" src="./assets/image-1.png" alt="Example image" />
+      </div>
+      <div class="item item-2">
+        <img class="item-img" src="./assets/image-2.png" alt="Example image" />
+      </div>
+      <div class="item item-3">
+        <img class="item-img" src="./assets/image-3.png" alt="Example image" />
+      </div>
+      <div class="item item-4">
+        <img class="item-img" src="./assets/image-4.png" alt="Example image" />
+      </div>
+      <div class="item item-5">
+        <img class="item-img" src="./assets/image-5.png" alt="Example image" />
+      </div>
+      <div class="item item-6">
+        <img class="item-img" src="./assets/image-6.png" alt="Example image" />
+      </div>
+      <div class="item item-7">
+        <img class="item-img" src="./assets/image-7.png" alt="Example image" />
+      </div>
+    </div>
+  </body>
+</html>
