@@ -6,16 +6,17 @@
     <title>Document</title>
   </head>
   <style>
-    .contendor {
+    .contenedor {
       display: grid;
       border: 5px solid #e1bee7;
       background-color: #fff1ff;
-      grid-template-columns: repeat(3, 150px);
-      grid-template-rows: repeat(3, 75px);
       grid-template-areas:
         "header header header"
         "side main main"
         "side main main";
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+      grid-template-rows: repeat(3, 75px);
+      gap: 10px;
     }
 
     .item {
