@@ -51,9 +51,10 @@ main {
   color: #fff;
   background-color: coral;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 20px 26px;
   cursor: pointer;
+  margin: 1rem 0;
 }
 
 /* Estilos de la sección de servicios */
@@ -144,6 +145,25 @@ main {
   .hero {
     grid-template-columns: 1fr;
     padding-bottom: 50px;
+  }
+
+  .info-title,
+  .services-title,
+  .menu-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
+  }
+
+  .info-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .info-button {
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 0.8rem 1.5rem;
   }
 
   .hero-image {

@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d2020;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.contenedor-conciertos {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  width: calc(33.33% - 20px);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 200px;
+  }
+}
+
+.card .textos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner ul {
+  list-style: none;
+}
+
+.banner ul li {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.banner .boton {
+  background-color: #ffd600;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+}

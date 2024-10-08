@@ -38,7 +38,7 @@ $y_i$, esta sumatoria nos daría un valor
 interpolado a un $x_k$.
 
 > [!TIP]
-> Este método al ser tan largo y complejo, generalmente
+> El método de _Lagrange_ al ser tan largo y complejo, generalmente
 > se toma un valor $x_k$ y se realiza la interpolación
 > únicamente con los valores cercanos al que queremos
 > obtener.
@@ -82,3 +82,13 @@ De esta manera ya tenemos listo la función para cualquier valor, siendo que lo 
 > interpolación, la misma necesita de tres parámetros
 > los valores $x$ y $y$, donde $x_k$ puede ser uno
 > o varios valores.
+
+> [!NOTE]
+> El método `interp1` puede tener un cuarto parámetro
+> para calcular la interpolación de manera mucho más
+> efectiva: `'spline'`, `'pchip'`
+
+> [!WARNING]
+> Existen diferentes "maneras" de realizar una
+> interpolación por un mismo método, cada uno
+> de estos puede ser más o menos exacto.
