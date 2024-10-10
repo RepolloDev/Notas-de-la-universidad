@@ -1,8 +1,8 @@
-<h1 align='cente'>🌡️ Tempereratura de Ebullicion</h1>
+<h1 align='center'>🌡️ Tempereratura de Ebullicion</h1>
 
-<p align='center'>
+<h4 align='center'>
     Por Luis Gabriel Coa Callisaya (<a href=https://github.com/RepolloDev''>@RepolloDev</a>)
-</p>
+</h4>
 
 Segun datos sacados de un libro, se tiene estimado
 la temperatura de _ebullición_ del agua está dada
