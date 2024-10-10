@@ -56,19 +56,19 @@ lo siguiente.
 
 | Variable | Valor real | Valor calculado | Error |
 | -------- | ---------- | --------------- | ----- |
-| Prueba   | x          | 202.32          | x     |
-| La Paz   | 189.88     | 187.05          | 1.49% |
-| El Alto  | 184.1      | 182.6           | 0.81% |
+| Prueba   | x          | 202.32          | 0.069 |
+| La Paz   | 189.88     | 187.05          | 0.015 |
+| El Alto  | 184.1      | 182.6           | 0.008 |
 
 Utilizando los mismos valores pero ahora mediante
 una interpolación de Lagrange tenemos los siguientes
 datos.
 
-| Variable | Valor real | Valor calculado | Error |
-| -------- | ---------- | --------------- | ----- |
-| Prueba   | x          | 202.18          | x     |
-| La Paz   | 189.88     | 188.99          | 0.46% |
-| El Alto  | 184.1      | 186.34          | 1.21% |
+| Variable | Valor real | Valor calculado | Error  |
+| -------- | ---------- | --------------- | ------ |
+| Prueba   | x          | 202.18          | x      |
+| La Paz   | 189.88     | 188.99          | 0.004% |
+| El Alto  | 184.1      | 186.34          | 0.012% |
 
 ## 🏁 Conclusión
 
