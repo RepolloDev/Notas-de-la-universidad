@@ -42,7 +42,7 @@ Entonces, mediante estos datos se puede realizar
 una interpolación, en este caso se realizará mediante
 
 <p align='center'>
-    <img src='./assets/capture.png' width='600'/>
+    <img src='./assets/capture.png'/>
 </p>
 
 > [!NOTE]
