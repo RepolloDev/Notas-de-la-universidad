@@ -52,4 +52,40 @@ Supongamos que tenemos los siguientes puntos:
 | 3    | 10  | 12.9 |
 
 Donde queremos encontrar un valor aproximado
-para un $x=6$
+para un $x=6$, entonces el polinomio de Newton
+sería:
+
+$$
+P(x) = a_0 + a_1(x - x_0) + a_2(x - x_0)(x - x_1) + a_3(x - x_0)(x - x_1)(x - x_2)
+$$
+
+Donde los coeficientes $a_i$ son las diferencias
+divididas de orden $i$, solo se puso así por
+estética.
+
+Calculando las diferencias divididas:
+
+| 1er nivel   | 2do nivel    | 3er nivel   |
+| ----------- | ------------ | ----------- |
+| 1.4         | -0.138888889 | 0.034444444 |
+| 0.566666667 | 0.136666667  | ---         |
+| 1.25        | ---          | ---         |
+
+> [!TIP]
+> Notar que a medida que se sube de nivel, se
+> va calculando la diferencia dividida de orden
+> superior, tenemos menos datos para calcular
+
+Entonces remplazando los datos en el polinomio
+para $P(x=6)$
+
+$$
+\begin{align*}
+P(6) &= 4.5 + 1.4(6 - 2) - 0.138888889(6 - 2)(6 - 5) + 0.034444444(6 - 2)(6 - 5)(6 - 8) \\
+& = 9.268888889
+\end{align*}
+$$
+
+> [!NOTE]
+> Para el caso se utilizan los valores de la primera fila
+> esto se denomina como _diferencias divididas hacia adelante_.
