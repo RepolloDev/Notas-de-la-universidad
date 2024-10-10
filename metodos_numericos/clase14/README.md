@@ -50,6 +50,10 @@ una interpolación, en este caso se realizará mediante
 > pues no es necesario interpolar, dado que
 > los valores son simples
 
+Finalmente, comparando los resultados con sus valores
+reales y obteniendo su error respectivo tenemos
+lo siguiente.
+
 | Variable | Valor real | Valor calculado | Error |
 | -------- | ---------- | --------------- | ----- |
 | Prueba   | x          | 202.32          | x     |
@@ -70,12 +74,12 @@ datos.
 
 En conclusión, ambos métodos son muy buenos
 para la interpolación de datos, pero para este
-caso Lagrange es mejor respecto a Newton, pero
-cabe remarcar que **únicamente de utilizaron datos cercanos**,
-es decir, se usaron valores en un rango que contienen
-a los que se deas interpolar.
+caso Lagrange es mejor respecto a Newton, según
+los errores obtenidos en cada caso, pues
+en el caso de Newton los errores son ligeramente más
+grandes que los de Lagrange.
 
 > [!IMPORTANT]
-> Dado que en ambos casos se usaron solo un rango de
-> valores y no todos, probablemente al usar todos
-> los datos Newton sea superior.
+> En ambos casos se usaron solo un rango de
+> valores y no todos (por practicidad), probablemente
+> al usar todos los datos Newton sea superior.
